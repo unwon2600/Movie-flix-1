@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    flex-wrap: wrap;
+}
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+#search-btn, #request-btn {
+    padding: 8px 15px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#search-btn:hover, #request-btn:hover {
+    background-color: #b20710;
+}
+#request-modal {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+#request-modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#request-modal input, #request-modal textarea {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+#request-modal button {
+    padding: 10px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#request-modal button:hover {
+    background-color: #b20710;
+}
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('hero-bg.jpg'); /* Add your own hero background image */
+    background-size: cover;
+}
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.movie-card {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.movie-card h3 {
+    margin: 10px 0;
+}
+.movie-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.download-btn:hover {
+    background-color: #b20710;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+}
