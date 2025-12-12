@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Flix - Your Ultimate Movie Channel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Flix</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+            <input type="text" id="search-input" placeholder="Search movies...">
+            <button id="search-btn">Search</button>
+            <button id="request-btn">Request Movies</button>
+        </div>
+    </header>
+    
+    <!-- Request Modal -->
+    <dialog id="request-modal">
+        <h3>Request a Movie</h3>
+        <form id="request-form">
+            <label for="movie-title">Movie Title:</label>
+            <input type="text" id="movie-title" required>
+            <label for="movie-details">Details (e.g., genre, year):</label>
+            <textarea id="movie-details" rows="4" required></textarea>
+            <button type="submit">Submit Request</button>
+            <button type="button" id="close-modal">Cancel</button>
+        </form>
+    </dialog>
+    
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to Movie Flix</h2>
+            <p>Discover and download the latest movies.</p>
+        </div>
+    </section>
+    <section id="movies">
+        <h2>Our Movie Collection</h2>
+        <div class="movie-grid" id="movie-grid">
+            <!-- Movies will be loaded dynamically here -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Movie Flix. All rights reserved. Downloads are for personal use only.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
